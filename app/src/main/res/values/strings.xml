@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Kalkulator</string>
+    <string name="cyfra1">pierwsza cyfra</string>
+    <string name="cyfra2">druga cyfra</string>
+    <string name="wynik">wynik dzialania</string>
+    <string name="mnozenie">*</string>
+    <string name="dzielenie">/</string>
+    <string name="dodawanie">+</string>
+    <string name="odejmowanie">-</string>
+    <string name="rozszerzenie">Pokaz rozszerzone funkcje</string>
+    <string name="pierwiastek">-v</string>
+    <string name="potega">**</string>
+    <string name="silnia">!</string>
+    <string name="powrot">Powrót</string>
+</resources>

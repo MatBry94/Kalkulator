@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Sekcja Edycji Liczb -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/cyfra1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="@string/cyfra1"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:id="@+id/drugaCyfra"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="@string/cyfra2"
+                android:inputType="numberDecimal" />
+        </LinearLayout>
+
+        <!-- Sekcja Przycisków Podstawowych Funkcji -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonDodawanie"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/dodawanie" />
+
+            <Button
+                android:id="@+id/buttonOdejmowanie"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/odejmowanie" />
+
+            <Button
+                android:id="@+id/buttonMnozenie"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/mnozenie" />
+
+            <Button
+                android:id="@+id/buttonDzielenie"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/dzielenie" />
+        </LinearLayout>
+
+        <!-- Sekcja Wyniku -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/wynik"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:hint="@string/wynik" />
+        </LinearLayout>
+
+        <!-- Sekcja Przycisku Rozszerzonych Funkcji -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/Rozszerzenie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/rozszerzenie" />
+        </LinearLayout>
+
+        <!-- Sekcja Rozszerzonych Funkcji -->
+        <LinearLayout
+            android:id="@+id/rozszerzoneFunkcjeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <!-- Przycisk Pierwiastek, Potęga, Silnia (w jednej linii) -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buttonPierwiastek"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/pierwiastek" />
+
+                <Button
+                    android:id="@+id/buttonPotega"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/potega" />
+
+                <Button
+                    android:id="@+id/buttonSilnia"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/silnia" />
+            </LinearLayout>
+
+            <!-- Przycisk Powrót (pod przyciskami Pierwiastek, Potęga, Silnia) -->
+            <Button
+                android:id="@+id/buttonPowrot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/powrot"
+                 />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
